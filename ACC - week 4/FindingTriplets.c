@@ -23,7 +23,7 @@ void triplet(struct node *head)
     for (t1 = head; t1 != NULL; t1 = t1 ->next){
         for (t2 = t1->next; t2 != NULL; t2 = t2 -> next){
             for (t3 = t2 -> next; t3!=NULL; t3=t3->next){
-                if (t1->data + t2->data + t3->data == x)
+                if (t1->data * t2->data * t3->data == x)
                     count++;
             }
         }
